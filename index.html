@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toast Messages</title>
+</head>
+<body>
+
+
+
+<div id="messageboard"></div>
+
+<script src="main.js"></script>
+
+<style>
+
+    body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background: #0f0c29;
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #messageboard {
+        padding: 5px;
+        color: #ffffff;
+        font-size: 40px;
+        font-family: inherit;
+        overflow: hidden;
+        max-width: 600px;
+    }
+
+    #blink-caret {
+        border-right: .15em solid orange;
+        /*animation: blink-caret .60s step-end infinite;*/
+        height: 100%;
+    }
+
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
+
+</style>
+
+</body>
+
+</html>
